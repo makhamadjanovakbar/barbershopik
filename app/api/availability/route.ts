@@ -4,7 +4,7 @@ import {
   computeSlotsForBarber,
 } from "@/lib/booking";
 import { jsonBadRequest, jsonInternal } from "@/lib/api";
-import { MIN_LEAD_MINUTES_WEB, SERVICE_DURATION_MAX } from "@/lib/constants";
+import { MIN_LEAD_MINUTES_WEB } from "@/lib/constants";
 import { isValidDateISO } from "@/lib/utils";
 
 export const dynamic = "force-dynamic";

@@ -5,10 +5,10 @@ import { usePathname, useRouter } from "next/navigation";
 
 const NAV_ITEMS = [
   { href: "/admin", label: "Загруженность", exact: true },
-  { href: "/admin/bookings", label: "Записи" },
-  { href: "/admin/barbers", label: "Барберы" },
-  { href: "/admin/services", label: "Услуги" },
-  { href: "/admin/schedule", label: "Расписание" },
+  { href: "/admin/bookings", label: "Записи", exact: false },
+  { href: "/admin/barbers", label: "Барберы", exact: false },
+  { href: "/admin/services", label: "Услуги", exact: false },
+  { href: "/admin/schedule", label: "Расписание", exact: false },
 ] as const;
 
 export default function Sidebar() {
